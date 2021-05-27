@@ -1,0 +1,64 @@
+﻿.sitebody{}
+.test1{
+font-style:italic;
+font-weight:900;
+font-size:20;
+font-family:標楷體;
+width:940;
+height:50;
+text-align : center;
+background-color:yellow;
+color:purple;
+padding:10px;
+}
+
+.test2{
+font-weight:oblique;
+font-size:20;
+font-family:新細明體;
+width:200;
+height:50;
+text-align : center;
+background-color:gray;
+color:orange;
+padding:10px;
+float:left;
+}
+
+.test3{
+font-weight:italic;
+font-size:20;
+font-family:新細明體;
+width:500;
+height:50;
+text-align : center;
+background-color:green;
+color:white;
+padding:10px;
+float:left;
+}
+
+.test4{
+font-weight:italic;
+font-size:20;
+font-family:新細明體;
+width:200;
+height:50;
+text-align : center;
+background-color:olive;
+color:black;
+padding:10px;
+float:left;
+}
+
+.test5{
+font-weight:italic;
+font-size:20;
+font-family:新細明體;
+width:940;
+height:300;
+text-align : center;
+background-color:blue;
+color:red;
+padding:10px;
+}
