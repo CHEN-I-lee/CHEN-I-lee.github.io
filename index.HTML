@@ -1,0 +1,26 @@
+﻿<SCRIPT LANGUAGE="javascript">
+      var MyWin = null;		
+ 	function OpenNewWindow()	
+      {
+        MyWin = window.open("期末報告.HTML", "MyWin","height=200, width=400");
+      } 
+      function CloseNewWindow()	
+      {
+          MyWin.close();
+      }       
+	function CloseWindow()		
+      {
+        window.close();
+      }
+	function setTime()		
+      {
+        window.setTimeout(function(){ alert("Hello"); }, 3000);
+      }
+    </SCRIPT> 
+<BODY>
+    <A HREF="javascript:window.OpenNewWindow();">開啟新視窗</A>
+    <A HREF="javascript:window.CloseNewWindow();">關閉新視窗</A>
+    <A HREF="javascript:window.CloseWindow();">關閉本視窗</A>
+	<A HREF="javascript:window.setTime();">設定時間</A>
+  </BODY> 
+
