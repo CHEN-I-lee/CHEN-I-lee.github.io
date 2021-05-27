@@ -1,0 +1,36 @@
+﻿<html>
+  <head>
+    <title>Enter</title>
+    <script language="javascript">
+	function member(){
+      var X = prompt("您的名字", " ");
+      alert("Welcome " + X);
+	}
+	function example(){
+      alert("請隨意地設定密碼,字數不限 ");
+	}
+    </script>
+  </head>
+  <body bgcolor = "gray">
+	 <div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+    </div>
+  </div>
+  <div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword">
+    </div>
+  </div>
+	<br>
+	<button onclick="member()">register</button>&nbsp&nbsp&nbsp<INPUT TYPE="BUTTON" ID="b1" VALUE= " exit" 
+      onclick="javascript:window.alert('exit now');">
+	<br><br>
+	<H1><A HREF="javascript:example()">輸入範例</A></H1>
+	<div onmouseover="alert('Error!')" style="padding:5px;background-color:#FFE5B5;">
+	錯誤
+	</div>
+	</body>
+</html> 
