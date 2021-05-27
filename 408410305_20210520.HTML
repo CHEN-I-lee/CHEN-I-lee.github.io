@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>0513</title>
+    <style>
+	* {font-size: large;}
+            input {text-align:right;
+                    width:3em;}
+    </style>
+	
+  </head>
+  <body>
+	<li>tree(n): <input type="number" id="tree" value="0">高</li><br>
+	<button id="order">列印</button>
+	<button id="cancel">清除</button>
+	<script type="text/javascript">
+	 var n=document.getElementById("tree");
+	var msg="";
+	document.getElementById("cancel").onclick = 
+            function (){
+                n.value=0;
+            };
+
+	var btnOrder =document.getElementById("order").onclick=
+            function (){
+            if(tree==0) return;    
+               
+        msg += "n=" + tree + "\n";
+	treecal(tree);
+                alert(msg);
+        };
+	tree.addEventListener('change', calc);
+	function calc(e) {
+          console.log(this);     // 在主控台顯示 this 物件
+          
+          var total = parseInt(this.value); 
+            if( total< 0)   
+              this.value=tree;   
+            else
+              tree=total;
+	      msg="";
+         subtotal.innerHTML = tree; 
+		
+	};
+	function toptree(n){
+	for(var i=1; i<=n; i++){
+		msg +="  ".repeat(n-i)+'*'.repeat(2*i-1)+"\n";
+	}
+	};
+
+	function bottomtree(n){
+	for(var i=1; i<=n; i++){
+		msg +="  ".repeat(n-1)+'*'+"\n";
+	}
+	};
+
+	function treecal(n){
+		toptree(n)
+		bottomtree(n)
+	};
+
+	</script>       
+  </body>
+</html> 
